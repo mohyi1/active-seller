@@ -1,0 +1,91 @@
+{
+  "project_info": {
+    "project_number": "800189603011",
+    "firebase_url": "https://souqmy-store-default-rtdb.firebaseio.com",
+    "project_id": "souqmy-store",
+    "storage_bucket": "souqmy-store.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800189603011:android:c830c0fbdb362bfab05676",
+        "android_client_info": {
+          "package_name": "com.souqmy.sellers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800189603011-o2b27ggksca6mfa274u0uedclrbiiaqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG92RdFbM8kiAYZMVarRNh3sTTJ0OxoiE"
+        },
+        {
+          "current_key": "AIzaSyAd_CZG7sI6GJbD90ycuFOf8hy_2nJKabY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800189603011-4ocosvi4mqcku5kvdi9mp0c1l744ob7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:800189603011:android:6715d91aa82ff978b05676",
+        "android_client_info": {
+          "package_name": "com.souqmy.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "800189603011-61b4fmg6rqk4701tcn72nf7e93a1gohn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.souqmy.store",
+            "certificate_hash": "34f5f63ca1167cd332e333ee2b26d7b57a8ae4bb"
+          }
+        },
+        {
+          "client_id": "800189603011-t52r4ga53rhi0q5mt9uvpvkqfh7io0hu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.souqmy.store",
+            "certificate_hash": "037e3827a27346164e115980bc0ae0435174b0a5"
+          }
+        },
+        {
+          "client_id": "800189603011-o2b27ggksca6mfa274u0uedclrbiiaqi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG92RdFbM8kiAYZMVarRNh3sTTJ0OxoiE"
+        },
+        {
+          "current_key": "AIzaSyAd_CZG7sI6GJbD90ycuFOf8hy_2nJKabY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "800189603011-4ocosvi4mqcku5kvdi9mp0c1l744ob7f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
