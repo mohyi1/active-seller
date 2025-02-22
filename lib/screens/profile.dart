@@ -313,7 +313,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                 child: TextField(
                   controller: _nameController,
                   decoration: InputDecorations.buildInputDecoration_1(
-                      hint_text: "محمد علي",
+                      hint_text: "اسم المستخدم",
                       borderColor: MyTheme.light_grey,
                       hintTextColor: MyTheme.grey_153),
                 ),

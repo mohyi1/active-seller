@@ -609,7 +609,7 @@ class _NewWholeSaleProductState extends State<NewWholeSaleProduct> {
                   },
                   child: Text(
                     LangText(context: context).getLocal()!.save_n_unpublish_ucf,
-                    style: TextStyle(color: MyTheme.white),
+                    style: TextStyle(color: MyTheme.black),
                   ))),
           Container(
               color: MyTheme.app_accent_color,
@@ -620,7 +620,7 @@ class _NewWholeSaleProductState extends State<NewWholeSaleProduct> {
                   },
                   child: Text(
                       LangText(context: context).getLocal()!.save_n_publish_ucf,
-                      style: TextStyle(color: MyTheme.white))))
+                      style: TextStyle(color: MyTheme.black))))
         ],
       ),
     );
@@ -2381,7 +2381,7 @@ class _NewWholeSaleProductState extends State<NewWholeSaleProduct> {
               style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: MyTheme.white),
+                  color: MyTheme.black),
             )));
   }
 

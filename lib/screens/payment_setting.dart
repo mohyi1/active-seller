@@ -262,7 +262,7 @@ class _PaymentSettingState extends State<PaymentSetting> {
             keyboardType: TextInputType.number,
             controller: bankRoutingNumberEditingController,
             decoration: InputDecorations.buildInputDecoration_1(
-                hint_text: "91400554",
+                hint_text: "رقم التحويل المصرفي",
                 borderColor: MyTheme.noColor,
                 hintTextColor: MyTheme.grey_153),
           ),
@@ -294,7 +294,7 @@ class _PaymentSettingState extends State<PaymentSetting> {
           child: TextField(
             controller: accountNumberEditingController,
             decoration: InputDecorations.buildInputDecoration_1(
-                hint_text: "7131259163",
+                hint_text: "رقم حسابك في البنك",
                 borderColor: MyTheme.noColor,
                 hintTextColor: MyTheme.grey_153),
           ),

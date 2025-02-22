@@ -49,7 +49,7 @@ class AuctionUpdateProduct extends StatefulWidget {
 class _AuctionUpdateProductState extends State<AuctionUpdateProduct> {
   // double variables
 
-  String _statAndEndTime = "Select Date";
+  String _statAndEndTime = "حدد التاريخ";
 
   double mHeight = 0.0, mWidht = 0.0;
   int _selectedTabIndex = 0;
@@ -668,7 +668,7 @@ class _AuctionUpdateProductState extends State<AuctionUpdateProduct> {
               },
               child: Text(
                 LangText(context: context).getLocal().update_now_ucf,
-                style: TextStyle(color: MyTheme.white),
+                style: TextStyle(color: MyTheme.black),
               ))),
     );
   }
@@ -2361,7 +2361,7 @@ class _AuctionUpdateProductState extends State<AuctionUpdateProduct> {
               style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: MyTheme.white),
+                  color: MyTheme.black),
             )));
   }
 
@@ -2404,7 +2404,7 @@ class _AuctionUpdateProductState extends State<AuctionUpdateProduct> {
               selectedLanguage = onchange;
               setChange();
               getProductCurrentValues();
-            }, selectedLanguage, languages,
+            }, selectedLanguage, languages.reversed.toList(),
                 width: DeviceInfo(context).getWidth() / 2.5),
           )
         ],

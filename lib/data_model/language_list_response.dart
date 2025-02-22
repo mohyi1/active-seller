@@ -20,7 +20,8 @@ class LanguageListResponse {
   int? status;
 
   factory LanguageListResponse.fromJson(Map<String, dynamic> json) => LanguageListResponse(
-    languages: List<Language>.from(json["data"].map((x) => Language.fromJson(x))),
+    // languages: List<Language>.from(json["data"].map((x) => Language.fromJson(x))),
+    languages: List<Language>.from(json["data"].map((x) => Language.fromJson(x))).reversed.toList(),
     success: json["success"],
     status: json["status"],
   );

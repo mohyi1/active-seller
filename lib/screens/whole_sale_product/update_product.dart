@@ -46,7 +46,7 @@ class UpdateProduct extends StatefulWidget {
 class _UpdateProductState extends State<UpdateProduct> {
   // double variables
 
-  String _statAndEndTime = "Select Date";
+  String _statAndEndTime = "حدد التاريخ";
 
   double mHeight = 0.0, mWidht = 0.0;
   int _selectedTabIndex = 0;
@@ -328,8 +328,8 @@ class _UpdateProductState extends State<UpdateProduct> {
 
       if (tmpTax.isNotEmpty) {
         var taxList = [
-          CommonDropDownItem("amount", "Flat"),
-          CommonDropDownItem("percent", "Percent")
+      CommonDropDownItem("amount", "مبلغ"),
+      CommonDropDownItem("percent", "نسبة مئوية"),
         ];
         CommonDropDownItem selectedTax = taxList
             .where((element) => element.key == tmpTax.first.taxType)
@@ -802,7 +802,7 @@ class _UpdateProductState extends State<UpdateProduct> {
               },
               child: Text(
                 LangText(context: context).getLocal().update_now_ucf,
-                style: TextStyle(color: MyTheme.white),
+                style: TextStyle(color: MyTheme.black),
               ))),
     );
   }
@@ -2617,7 +2617,7 @@ class _UpdateProductState extends State<UpdateProduct> {
               style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: MyTheme.white),
+                  color: MyTheme.black),
             )));
   }
 
@@ -2660,7 +2660,7 @@ class _UpdateProductState extends State<UpdateProduct> {
               selectedLanguage = onchange;
               setChange();
               getProductCurrentValues();
-            }, selectedLanguage, languages,
+            }, selectedLanguage, languages.reversed.toList(),
                 width: DeviceInfo(context).getWidth() / 2.5),
           )
         ],

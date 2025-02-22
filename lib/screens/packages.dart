@@ -348,7 +348,7 @@ class _PackagesState extends State<Packages> {
                         style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.bold,
-                            color: MyTheme.white),
+                            color: MyTheme.black),
                         textAlign: TextAlign.end,
                       ),
                       Text(
@@ -356,7 +356,7 @@ class _PackagesState extends State<Packages> {
                         style: TextStyle(
                             fontSize: 12,
                             fontWeight: FontWeight.bold,
-                            color: MyTheme.white),
+                            color: MyTheme.black),
                       ),
                       Text(
                         packageDate +
@@ -365,7 +365,7 @@ class _PackagesState extends State<Packages> {
                                 .getLocal()!
                                 .days_ucf,
                         style: TextStyle(
-                            fontSize: 10, color: MyTheme.light_grey),
+                            fontSize: 10, color: MyTheme.black),
                         textAlign: TextAlign.end,
                       ),
                     ],

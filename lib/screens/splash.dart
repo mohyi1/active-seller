@@ -309,7 +309,7 @@ Widget build(BuildContext context) {
                 // Bottom text with padding
                 Padding(
                   padding: const EdgeInsets.only(bottom: 32.0),
-                  child: Text("powered by owntechs.com"),
+                  child: Text("powered by owntechs.com", style: TextStyle(color: Colors.white)),
                 ),
               ],
             ),

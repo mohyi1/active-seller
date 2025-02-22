@@ -49,18 +49,19 @@ class _DateAndTimePickerState extends State<DateAndTimePicker> {
       .minute;
 
   List<String> months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
+"يناير",
+"فبراير",
+"مارس",
+"أبريل",
+"مايو",
+"يونيو",
+"يوليو",
+"أغسطس",
+"سبتمبر",
+"أكتوبر",
+"نوفمبر",
+"ديسمبر"
+
   ];
 
   setData() {
@@ -123,7 +124,7 @@ class _DateAndTimePickerState extends State<DateAndTimePicker> {
       child: Column(
         children: [
           Text(
-            "YEAR",
+            "سنة",
             style: _titleStyle(),
           ),
           SizedBox(
@@ -173,7 +174,7 @@ class _DateAndTimePickerState extends State<DateAndTimePicker> {
       child: Column(
         children: [
           Text(
-            "MONTH",
+            "شهر",
             style: _titleStyle(),
           ),
           SizedBox(
@@ -220,7 +221,7 @@ class _DateAndTimePickerState extends State<DateAndTimePicker> {
       child: Column(
         children: [
           Text(
-            "DAY",
+            "يوم",
             style: _titleStyle(),
           ),
           SizedBox(
@@ -271,7 +272,7 @@ class _DateAndTimePickerState extends State<DateAndTimePicker> {
       child: Column(
         children: [
           Text(
-            "HOUR",
+            "ساعة",
             style: _titleStyle(),
           ),
           Container(
@@ -316,7 +317,7 @@ class _DateAndTimePickerState extends State<DateAndTimePicker> {
       child: Column(
         children: [
           Text(
-            "MIN",
+            "دقيقة",
             style: _titleStyle(),
           ),
           Container(

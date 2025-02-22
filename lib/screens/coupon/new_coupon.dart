@@ -682,30 +682,30 @@ class _NewCouponState extends State<NewCoupon> {
     );
   }
 
-/*
-  Widget _buildCouponProductList() {
-    return MyWidget.customCardView(
-      elevation: 5,
-      borderRadius: 6.0,
-      borderColor: MyTheme.light_grey,
-      padding: EdgeInsets.symmetric(vertical: 14,horizontal: 14),
-      width: DeviceInfo(context).getWidth(),
-      child: SmartSelect<CouponProduct>.multiple(
-        modalType: S2ModalType.bottomSheet,
-          modalFilter:true ,
-          title: "Choose Product",
-          modalConfig:S2ModalConfig(title: "Search Product") ,
-          choiceItems: List<S2Choice<CouponProduct>>.generate(_productList.length, (index) =>
-              S2Choice<CouponProduct>(value: _productList[index], title:_productList[index].name),
-          ),
-          value: _chosenProduct,
-        onChange: (onChange){
-          setState(() {
-            _chosenProduct = onChange.value;
-          });
-      },)
-    );
-  }*/
+
+  // Widget _buildCouponProductList() {
+  //   return MyWidget.customCardView(
+  //     elevation: 5,
+  //     borderRadius: 6.0,
+  //     borderColor: MyTheme.light_grey,
+  //     padding: EdgeInsets.symmetric(vertical: 14,horizontal: 14),
+  //     width: DeviceInfo(context).getWidth(),
+  //     child: SmartSelect<CouponProduct>.multiple(
+  //       modalType: S2ModalType.bottomSheet,
+  //         modalFilter:true ,
+  //         title: "Choose Product",
+  //         modalConfig:S2ModalConfig(title: "Search Product") ,
+  //         choiceItems: List<S2Choice<CouponProduct>>.generate(_productList.length, (index) =>
+  //             S2Choice<CouponProduct>(value: _productList[index], title:_productList[index].name),
+  //         ),
+  //         value: _chosenProduct,
+  //       onChange: (onChange){
+  //         setState(() {
+  //           _chosenProduct = onChange.value;
+  //         });
+  //     },)
+  //   );
+  // }*/
 
   Widget _buildCouponDiscountList() {
     return MyWidget.customCardView(

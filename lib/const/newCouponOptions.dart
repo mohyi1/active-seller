@@ -10,10 +10,10 @@ class CouponInformationOptions {
     list.add(CouponInformationOptions(
         value: LangText(context: OneContext().context).getLocal().select_ucf,
         key: ""));
-    list.add(CouponInformationOptions(
-        value:
-            LangText(context: OneContext().context).getLocal().for_product_ucf,
-        key: "product_base"));
+    // list.add(CouponInformationOptions(
+    //     value:
+    //         LangText(context: OneContext().context).getLocal().for_product_ucf,
+    //     key: "product_base"));
     list.add(CouponInformationOptions(
         value: LangText(context: OneContext().context)
             .getLocal()

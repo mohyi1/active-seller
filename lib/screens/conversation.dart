@@ -296,7 +296,7 @@ class _ConversationState extends State<Conversation> {
                 style: TextStyle(
                   fontSize: 8,
                   color: (_messages[index].sendType == "seller"
-                      ? MyTheme.light_grey
+                      ? MyTheme.black
                       : MyTheme.grey_153),
                 ),
               )),
@@ -307,7 +307,7 @@ class _ConversationState extends State<Conversation> {
               style: TextStyle(
                 fontSize: 12,
                 color: (_messages[index].sendType == "seller"
-                    ? MyTheme.white
+                    ? MyTheme.black
                     : Colors.black),
               ),
             ),

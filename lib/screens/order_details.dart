@@ -423,7 +423,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                         Text(
                           _orderDetails.total,
                           style: TextStyle(
-                              color: MyTheme.app_accent_color,
+                              color: MyTheme.black,
                               fontSize: 13,
                               fontWeight: FontWeight.w600),
                         ),
@@ -1175,7 +1175,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                   Text(
                     _orderDetails.total,
                     style: TextStyle(
-                        color: MyTheme.app_accent_color,
+                        color: MyTheme.black,
                         fontSize: 16,
                         fontWeight: FontWeight.bold),
                   ),
@@ -1222,7 +1222,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                   style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.bold,
-                      color: MyTheme.app_accent_color),
+                      color: MyTheme.black),
                 ),
               ],
             ),

@@ -46,7 +46,7 @@ class UpdateProduct extends StatefulWidget {
 class _UpdateProductState extends State<UpdateProduct> {
   // double variables
 
-  String _statAndEndTime = "Select Date";
+  String _statAndEndTime = "حدد التاريخ";
 
   double mHeight = 0.0, mWidht = 0.0;
   int _selectedTabIndex = 0;
@@ -131,7 +131,7 @@ class _UpdateProductState extends State<UpdateProduct> {
       cashOnDelivery,
       estShippingDays,
       button;
-  String? lang = "en";
+  String? lang = "sa";
   var tagMap = [];
   List<String?>? tags = [],
       colors,
@@ -275,7 +275,7 @@ class _UpdateProductState extends State<UpdateProduct> {
         selectedColors.add(element);
       }
     });
-
+    createProductVariation();
     setState(() {});
   }
 
@@ -333,7 +333,7 @@ class _UpdateProductState extends State<UpdateProduct> {
 
     discountTypeList.clear();
     discountTypeList.addAll([
-      CommonDropDownItem("flat", "مبلغ"),
+      CommonDropDownItem("amount", "مبلغ"),
       CommonDropDownItem("percent", "نسبة مئوية"),
     ]);
     selectedProductDiscountType = discountTypeList.first;
@@ -999,9 +999,12 @@ class _UpdateProductState extends State<UpdateProduct> {
     getLanguages().then((value) {
       getProductCurrentValues();
     });
+    // getColors();
+    // createProductVariation();
     // TODO: implement initState
     super.initState();
   }
+
 
   @override
   Widget build(BuildContext context) {
@@ -1036,7 +1039,7 @@ class _UpdateProductState extends State<UpdateProduct> {
               },
               child: Text(
                 LangText(context: context).getLocal()!.update_now_ucf,
-                style: TextStyle(color: MyTheme.white),
+                style: TextStyle(color: MyTheme.black),
               ))),
     );
   }
@@ -1488,7 +1491,7 @@ class _UpdateProductState extends State<UpdateProduct> {
             ),
 
           itemSpacer(),
-
+          //////////////////////////
           ListView.separated(
               physics: NeverScrollableScrollPhysics(),
               shrinkWrap: true,
@@ -2423,7 +2426,8 @@ class _UpdateProductState extends State<UpdateProduct> {
             width: width ?? mWidht,
             padding: const EdgeInsets.symmetric(horizontal: 18, vertical: 10),
             decoration: MDecoration.decoration1(),
-            child: SingleChildScrollView(
+            child: 
+            SingleChildScrollView(
               child: isProductDetailsInit
                   ? MultiCategory(
                       isCategoryInit: isCategoryInit,
@@ -2438,7 +2442,8 @@ class _UpdateProductState extends State<UpdateProduct> {
                       initialMainCategory: categoryId,
                     )
                   : SizedBox.shrink(),
-            )),
+            )
+            ),
         isMandatory: isMandatory);
   }
 
@@ -2477,6 +2482,7 @@ class _UpdateProductState extends State<UpdateProduct> {
   Widget _buildLanguageDropDown(
       dynamic onchange, Language? selectedValue, List<Language> itemList,
       {double? width}) {
+        
     return Container(
       height: 46,
       width: DeviceInfo(context).getWidth() / 2.6,
@@ -3095,7 +3101,7 @@ class _UpdateProductState extends State<UpdateProduct> {
               style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: MyTheme.white),
+                  color: MyTheme.black),
             )));
   }
 
@@ -3136,8 +3142,10 @@ class _UpdateProductState extends State<UpdateProduct> {
           SizedBox(
             width: DeviceInfo(context).getWidth() / 2.5,
             child: _buildLanguageDropDown((onchange) {
-              selectedLanguage = onchange;
-              setChange();
+              setState(() {
+                selectedLanguage = onchange;
+              });
+              // setChange();
               getProductCurrentValues();
             }, selectedLanguage, languages,
                 width: DeviceInfo(context).getWidth() / 2.5),

@@ -916,7 +916,7 @@ class _HomeState extends State<Home> {
                   style: const TextStyle(
                       fontSize: 14,
                       fontWeight: FontWeight.bold,
-                      color: MyTheme.app_accent_color),
+                      color: MyTheme.black),
                   textAlign: TextAlign.center,
                 ),
                 const SizedBox(
@@ -927,7 +927,7 @@ class _HomeState extends State<Home> {
                   style: const TextStyle(
                       fontSize: 10,
                       fontWeight: FontWeight.normal,
-                      color: MyTheme.app_accent_color),
+                      color: MyTheme.black),
                   textAlign: TextAlign.center,
                 ),
               ],
@@ -952,7 +952,7 @@ class _HomeState extends State<Home> {
                 child: Text(
                   LangText(context: context).getLocal()!.verify_now,
                   textAlign: TextAlign.center,
-                  style: const TextStyle(fontSize: 12, color: Colors.white),
+                  style: const TextStyle(fontSize: 12, color: Colors.black),
                 ),
                 width: DeviceInfo(context).getWidth() / 3,
                 height: 30,
@@ -990,9 +990,7 @@ class _HomeState extends State<Home> {
   }
 
   Widget top4Boxes() {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
+    return Stack(
       children: [
         /* Container(
           height: 240,
@@ -1012,38 +1010,40 @@ class _HomeState extends State<Home> {
             ],
           ),
         ),*/
-        // Positioned(
-        //   top: 0,
-        //   child: SizedBox(
-        //     height: 170,
-        //     width: DeviceInfo(context).getWidth(),
-        //     child:
-        //         MyWidget.imageSlider(imageUrl: logoSliders, context: context),
-        //   ),
-        // ),
+        Positioned(
+          top: 0,
+          child: SizedBox(
+            height: 170,
+            width: DeviceInfo(context).getWidth(),
+            child:
+                MyWidget.imageSlider(imageUrl: logoSliders, context: context),
+          ),
+        ),
 
         // this container only for transparent color
-        // Container(
-        //   height: 240,
-        //   decoration: const BoxDecoration(
-        //     gradient: LinearGradient(
-        //       begin: Alignment.topCenter,
-        //       end: Alignment.bottomCenter,
-        //       colors: [
-        //         Color.fromRGBO(255, 255, 255, 0),
-        //         Color.fromRGBO(255, 255, 255, .15),
-        //         Color.fromRGBO(255, 255, 255, .25),
-        //         Color.fromRGBO(255, 255, 255, .50),
-        //         Color.fromRGBO(255, 255, 255, .9),
-        //         Color.fromRGBO(255, 255, 255, 1),
-        //         Color.fromRGBO(255, 255, 255, 1),
-        //         Color.fromRGBO(255, 255, 255, 1),
-        //       ],
-        //     ),
-        //   ),
-        // ),
-
         Container(
+          height: 240,
+          decoration: const BoxDecoration(
+            gradient: LinearGradient(
+              begin: Alignment.topCenter,
+              end: Alignment.bottomCenter,
+              colors: [
+                Color.fromRGBO(255, 255, 255, 0),
+                Color.fromRGBO(255, 255, 255, .15),
+                Color.fromRGBO(255, 255, 255, .25),
+                Color.fromRGBO(255, 255, 255, .50),
+                Color.fromRGBO(255, 255, 255, .9),
+                Color.fromRGBO(255, 255, 255, 1),
+                Color.fromRGBO(255, 255, 255, 1),
+                Color.fromRGBO(255, 255, 255, 1),
+              ],
+            ),
+          ),
+        ),
+
+        Positioned(
+          bottom: 0,
+          child: Container(
             color: Colors.transparent,
             // margin: EdgeInsets.only(top: 60),
             //color: MyTheme.red,
@@ -1133,9 +1133,156 @@ class _HomeState extends State<Home> {
           ),*/
         
             ),
+        ),
       ],
     );
   }
+  // Widget top4Boxes() {
+  //   return Column(
+  //     mainAxisAlignment: MainAxisAlignment.center,
+  //     crossAxisAlignment: CrossAxisAlignment.center,
+  //     children: [
+  //       // Container(
+  //       //   height: 240,
+  //       //   child: Column(
+  //       //     children: [
+  //       //       Container(
+  //       //         height: 170,
+  //       //         width: DeviceInfo(context).getWidth(),
+  //       //         child: MyWidget.imageSlider(
+  //       //             imageUrl: logoSliders, context: context),
+  //       //       ),
+  //       //       Container(
+
+  //       //         height: 70,
+  //       //         width: DeviceInfo(context).getWidth(),
+  //       //       ),
+  //       //     ],
+  //       //   ),
+  //       // ),
+  //       Positioned(
+  //         top: 0,
+  //         child: SizedBox(
+  //           height: 170,
+  //           width: DeviceInfo(context).getWidth(),
+  //           child:
+  //               MyWidget.imageSlider(imageUrl: logoSliders, context: context),
+  //         ),
+  //       ),
+
+  //       Container(
+  //         height: 240,
+  //         decoration: const BoxDecoration(
+  //           gradient: LinearGradient(
+  //             begin: Alignment.topCenter,
+  //             end: Alignment.bottomCenter,
+  //             colors: [
+  //               Color.fromRGBO(255, 255, 255, 0),
+  //               Color.fromRGBO(255, 255, 255, .15),
+  //               Color.fromRGBO(255, 255, 255, .25),
+  //               Color.fromRGBO(255, 255, 255, .50),
+  //               Color.fromRGBO(255, 255, 255, .9),
+  //               Color.fromRGBO(255, 255, 255, 1),
+  //               Color.fromRGBO(255, 255, 255, 1),
+  //               Color.fromRGBO(255, 255, 255, 1),
+  //             ],
+  //           ),
+  //         ),
+  //       ),
+
+  //       Container(
+  //           color: Colors.transparent,
+  //           // margin: EdgeInsets.only(top: 60),
+  //           //color: MyTheme.red,
+  //           //height: 190,
+  //           width: DeviceInfo(context).getWidth(),
+  //           child: Column(
+  //             crossAxisAlignment: CrossAxisAlignment.end,
+  //             children: [
+  //               Row(
+  //                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+  //                 children: [
+  //                   MyWidget.homePageTopBox(context,
+  //                       elevation: 5,
+  //                       title: LangText(context: context)
+  //                           .getLocal()!
+  //                           .products_ucf,
+  //                       counter: _productsCount,
+  //                       iconUrl: 'assets/icon/products.png'),
+  //                   MyWidget.homePageTopBox(context,
+  //                       title:
+  //                           LangText(context: context).getLocal()!.rating_ucf,
+  //                       counter: _rattingCount,
+  //                       iconUrl: 'assets/icon/rating.png'),
+  //                 ],
+  //               ),
+  //               Row(
+  //                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+
+  //                 children: [
+  //                   MyWidget.homePageTopBox(context,
+  //                       elevation: 5,
+  //                       title: LangText(context: context)
+  //                           .getLocal()!
+  //                           .total_orders_ucf,
+  //                       counter: _totalOrdersCount,
+  //                       iconUrl: 'assets/icon/orders.png'),
+  //                   MyWidget.homePageTopBox(context,
+  //                       elevation: 5,
+  //                       title: LangText(context: context)
+  //                           .getLocal()!
+  //                           .total_sales_ucf,
+  //                       counter: _totalSalesCount,
+  //                       iconUrl: 'assets/icon/sales.png'),
+  //                 ],
+  //               )
+  //             ],
+  //           )
+        
+  //       /*
+  //         GridView.count(
+  //           physics: NeverScrollableScrollPhysics(),
+  //           primary: false,
+  //           padding:  EdgeInsets.all(AppStyles.layoutMargin),
+  //           crossAxisSpacing: 14,
+  //           mainAxisSpacing: 14,
+  //           crossAxisCount: 2,
+  //           childAspectRatio:DeviceInfo(context).getHeightInPercent(),
+  //           children: <Widget>[
+  //             MyWidget.homePageTopBox(context,
+  //                 elevation: 5,
+  //                 title: LangText(context: context)
+  //                     .getLocal()
+  //                     .product_screen_products,
+  //                 counter: _productsCount,
+  //                 iconUrl: 'assets/icon/products.png'),
+  //             MyWidget.homePageTopBox(context,
+  //                 title:
+  //                 LangText(context: context).getLocal().common_rating,
+  //                 counter: _rattingCount,
+  //                 iconUrl: 'assets/icon/rating.png'),
+        
+  //             MyWidget.homePageTopBox(context,
+  //                 elevation: 5,
+  //                 title: LangText(context: context)
+  //                     .getLocal()
+  //                     .common_total_orders,
+  //                 counter: _totalOrdersCount,
+  //                 iconUrl: 'assets/icon/orders.png'),
+  //             MyWidget.homePageTopBox(context,
+  //                 elevation: 5,
+  //                 title: LangText(context: context)
+  //                     .getLocal()
+  //                     .common_total_sales,
+  //                 counter: _totalSalesCount,
+  //                 iconUrl: 'assets/icon/sales.png')
+  //           ],
+  //         ),*/
+        
+  //           ),
+  //     ],
+  //   );
+  // }
 }
 
 class ChartData {

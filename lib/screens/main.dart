@@ -245,20 +245,20 @@ class _MainState extends State<Main> {
                 crossAxisAlignment: CrossAxisAlignment.end,
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  // Text(
-                  //   '${CustomDateTime.getDate}',
-                  //   style: TextStyle(
-                  //       color: MyTheme.black,
-                  //       fontSize: 10,
-                  //       fontWeight: FontWeight.w400),
-                  // ),
-                  // Text(
-                  //   '${CustomDateTime.getDayName}',
-                  //   style: TextStyle(
-                  //       color: MyTheme.black,
-                  //       fontSize: 10,
-                  //       fontWeight: FontWeight.w400),
-                  // ),
+                  Text(
+                    '${CustomDateTime.getDate}',
+                    style: TextStyle(
+                        color: MyTheme.black,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w400),
+                  ),
+                  Text(
+                    '${CustomDateTime.getDayName}',
+                    style: TextStyle(
+                        color: MyTheme.black,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w400),
+                  ),
                 ],
               )),
         ),

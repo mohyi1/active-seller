@@ -163,7 +163,7 @@ class _CommissionHistoryState extends State<CommissionHistory> {
               style: TextStyle(
                   fontSize: 13,
                   fontWeight: FontWeight.bold,
-                  color: MyTheme.app_accent_color),
+                  color: MyTheme.black),
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
             ),
@@ -187,7 +187,7 @@ class _CommissionHistoryState extends State<CommissionHistory> {
                               adminCommission,
                           style: TextStyle(
                             fontSize: 12,
-                            color: MyTheme.app_accent_color,
+                            color: MyTheme.black,
                           ),
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
@@ -198,7 +198,7 @@ class _CommissionHistoryState extends State<CommissionHistory> {
                   Text(sellerEarning,
                       style: TextStyle(
                         fontSize: 16,
-                        color: MyTheme.app_accent_color,
+                        color: MyTheme.black,
                         fontWeight: AppStyles.bold,
                       )),
                 ],

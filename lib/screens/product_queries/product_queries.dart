@@ -231,7 +231,7 @@ class _ProductQueriesState extends State<ProductQueries> {
                       productName,
                       style: const TextStyle(
                         fontSize: 12,
-                        color: MyTheme.app_accent_color,
+                        color: Colors.black,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
@@ -258,7 +258,7 @@ class _ProductQueriesState extends State<ProductQueries> {
                       question,
                       style: const TextStyle(
                         fontSize: 12,
-                        color: MyTheme.app_accent_color,
+                        color: Colors.black,
                       ),
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
@@ -287,9 +287,7 @@ class _ProductQueriesState extends State<ProductQueries> {
                     status,
                     style: TextStyle(
                       fontSize: 12,
-                      color: status == "Replied"
-                          ? MyTheme.dark_grey
-                          : Colors.red[300],
+                      color: Colors.black,
                     ),
                   )
                 ],

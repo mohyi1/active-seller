@@ -432,7 +432,7 @@ class _NewDigitalProductState extends State<NewDigitalProduct> {
                 submitProduct("publish");
               },
               child: Text(LangText(context: context).getLocal()!.save_ucf,
-                  style: TextStyle(color: MyTheme.white)))),
+                  style: TextStyle(color: MyTheme.black)))),
     );
   }
 
@@ -1679,7 +1679,7 @@ class _NewDigitalProductState extends State<NewDigitalProduct> {
               style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: MyTheme.white),
+                  color: MyTheme.black),
             )));
   }
 

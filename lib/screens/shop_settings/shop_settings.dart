@@ -56,7 +56,7 @@ class _ShopSettingsState extends State<ShopSettings> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(right: 8.0,left: 4),
-                        child: Image.asset("assets/icon/general_setting.png",height: 17,width: 17,),
+                        child: Image.asset("assets/icon/general_setting.png",height: 17,width: 17,color: Colors.black),
                       ),
 
                       Text(
@@ -65,14 +65,14 @@ class _ShopSettingsState extends State<ShopSettings> {
                             .general_setting_ucf,
                         style: TextStyle(
                             fontSize: 14,
-                            color: MyTheme.white,
+                            color: MyTheme.black,
                             fontWeight: FontWeight.bold),
                       ),
                       Spacer(),
                       Icon(
                         Icons.navigate_next_rounded,
                         size: 20,
-                        color: MyTheme.white,
+                        color: MyTheme.black,
                       )
                     ],
                   ),
@@ -102,7 +102,7 @@ class _ShopSettingsState extends State<ShopSettings> {
                         children: [
                           Padding(
                             padding: const EdgeInsets.only(right: 8.0,left: 4),
-                            child: Image.asset("assets/icon/delivery_boy_setting.png",height: 17,width: 17,),
+                            child: Image.asset("assets/icon/delivery_boy_setting.png",height: 17,width: 17,color: Colors.black,),
                           ),
                           Text(
                             LangText(context: context)
@@ -110,14 +110,14 @@ class _ShopSettingsState extends State<ShopSettings> {
                                 .delivery_boy_pickup_point,
                             style: TextStyle(
                                 fontSize: 14,
-                                color: MyTheme.white,
+                                color: MyTheme.black,
                                 fontWeight: FontWeight.bold),
                           ),
                           Spacer(),
                           Icon(
                             Icons.navigate_next_rounded,
                             size: 20,
-                            color: MyTheme.white,
+                            color: MyTheme.black,
                           ),
                         ],
                       ),
@@ -142,7 +142,7 @@ class _ShopSettingsState extends State<ShopSettings> {
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(right: 8.0,left: 4),
-                        child: Image.asset("assets/icon/banner_setting.png",height: 17,width: 17,),
+                        child: Image.asset("assets/icon/banner_setting.png",height: 17,width: 17,color: Colors.black),
                       ),
 
                       Text(
@@ -151,55 +151,55 @@ class _ShopSettingsState extends State<ShopSettings> {
                             .banner_settings,
                         style: TextStyle(
                             fontSize: 14,
-                            color: MyTheme.white,
+                            color: MyTheme.black,
                             fontWeight: FontWeight.bold),
                       ),
                       Spacer(),
                       Icon(
                         Icons.navigate_next_rounded,
                         size: 20,
-                        color: MyTheme.white,
+                        color: MyTheme.black,
                       )
                     ],
                   )),
               SizedBox(
                 height: 20,
               ),
-              Buttons(
-                  color: MyTheme.app_accent_color,
-                  width: DeviceInfo(context).getWidth(),
-                  height: 75,
-                  shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10)),
-                  onPressed: () {
-                    MyTransaction(context: context)
-                        .push(ShopSocialMedialSetting());
-                  },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(right: 8.0,left: 4),
-                        child: Image.asset("assets/icon/social_setting.png",height: 17,width: 17,),
-                      ),
+              // Buttons(
+              //     color: MyTheme.app_accent_color,
+              //     width: DeviceInfo(context).getWidth(),
+              //     height: 75,
+              //     shape: RoundedRectangleBorder(
+              //         borderRadius: BorderRadius.circular(10)),
+              //     onPressed: () {
+              //       MyTransaction(context: context)
+              //           .push(ShopSocialMedialSetting());
+              //     },
+              //     child: Row(
+              //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              //       children: [
+              //         Padding(
+              //           padding: const EdgeInsets.only(right: 8.0,left: 4),
+              //           child: Image.asset("assets/icon/social_setting.png",height: 17,width: 17,color: Colors.black),
+              //         ),
 
-                      Text(
-                        LangText(context: context)
-                            .getLocal()!
-                            .social_media_link,
-                        style: TextStyle(
-                            fontSize: 14,
-                            color: MyTheme.white,
-                            fontWeight: FontWeight.bold),
-                      ),
-                      Spacer(),
-                      Icon(
-                        Icons.navigate_next_rounded,
-                        size: 20,
-                        color: MyTheme.white,
-                      )
-                    ],
-                  )),
+              //         Text(
+              //           LangText(context: context)
+              //               .getLocal()!
+              //               .social_media_link,
+              //           style: TextStyle(
+              //               fontSize: 14,
+              //               color: MyTheme.black,
+              //               fontWeight: FontWeight.bold),
+              //         ),
+              //         Spacer(),
+              //         Icon(
+              //           Icons.navigate_next_rounded,
+              //           size: 20,
+              //           color: MyTheme.black,
+              //         )
+              //       ],
+              //     )),
             ],
           ),
         ),

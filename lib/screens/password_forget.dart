@@ -203,7 +203,7 @@ class _PasswordForgetState extends State<PasswordForget> {
                                 autoValidateMode: AutovalidateMode.disabled,
                                 selectorTextStyle:
                                     TextStyle(color: MyTheme.font_grey),
-                                textStyle: TextStyle(color: Colors.white54),
+                                textStyle: TextStyle(color: Colors.black),
                                 initialValue: phoneCode,
                                 textFieldController: _phoneNumberController,
                                 formatInput: true,
@@ -237,7 +237,7 @@ class _PasswordForgetState extends State<PasswordForget> {
                               child: Text(
                                 "or, Login with ${_send_code_by == "email" ? 'a phone' : 'an email'}",
                                 style: TextStyle(
-                                    color: MyTheme.white,
+                                    color: MyTheme.black,
                                     fontStyle: FontStyle.italic,
                                     decoration: TextDecoration.underline),
                               ),
@@ -280,7 +280,7 @@ class _PasswordForgetState extends State<PasswordForget> {
                           child: Text(
                             getLocal(context).send_code_ucf,
                             style: TextStyle(
-                                color: MyTheme.app_accent_color,
+                                color: MyTheme.white,
                                 fontSize: 14,
                                 fontWeight: FontWeight.w600),
                           ),

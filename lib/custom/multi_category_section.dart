@@ -118,11 +118,11 @@ class _MultiCategoryState extends State<MultiCategory> {
                                         .remove(categories[index].id);
                                   }
 
-                                  if (categories[index].children.isNotEmpty) {
-                                    onSelectedCategory(
-                                        categories[index].children,
-                                        newValue ?? false);
-                                  }
+                                  // if (categories[index].children.isNotEmpty) {
+                                  //   onSelectedCategory(
+                                  //       categories[index].children,
+                                  //       newValue ?? false);
+                                  // }
                                   setChange();
                                 }),
                           ),

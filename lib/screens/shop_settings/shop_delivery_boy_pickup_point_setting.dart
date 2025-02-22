@@ -334,6 +334,7 @@ class _ShopDeliveryBoyPickupPointState
 
   Widget buildMap() {
     return PlacePicker(
+      searchingText: LangText(context: context).getLocal()!.searching_ucf,
       hintText: LangText(context: context).getLocal()!.your_delivery_location,
       apiKey: OtherConfig.GOOGLE_MAP_API_KEY,
       initialPosition: kInitialPosition,

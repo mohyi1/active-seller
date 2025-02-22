@@ -98,7 +98,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
 
   onTapResend() async {
     var passwordResendCodeResponse = await AuthRepository()
-        .getPasswordResendCodeResponse(widget.email, widget.verify_by);
+        .getPasswordForgetResponse(widget.email, widget.verify_by);
 
     if (passwordResendCodeResponse.result == false) {
       ToastComponent.showDialog(passwordResendCodeResponse.message!,
@@ -118,7 +118,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
       textDirection:
           app_language_rtl.$! ? TextDirection.rtl : TextDirection.ltr,
       child: Scaffold(
-        backgroundColor: MyTheme.app_accent_color,
+        backgroundColor: MyTheme.white,
         body: Stack(
           children: [
             Container(
@@ -132,7 +132,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
                     child: Container(
                       width: 75,
                       height: 75,
-                      child: Image.asset('assets/logo/white_logo.png'),
+                      child: Image.asset('assets/logo/app_logo.png'),
                     ),
                   ),
                   Padding(
@@ -140,7 +140,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
                     child: Text(
                       AppLocalizations.of(context)!.reset_password_ucf,
                       style: TextStyle(
-                          color: MyTheme.white,
+                          color: MyTheme.black,
                           fontSize: 18,
                           fontWeight: FontWeight.w600),
                     ),
@@ -172,7 +172,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
                                   getLocal(context).verification_code,
                                   style: TextStyle(
                                     fontSize: 12,
-                                    color: MyTheme.white,
+                                    color: MyTheme.black,
                                   ),
                                   textHeightBehavior: TextHeightBehavior(
                                       applyHeightToFirstAscent: false),
@@ -189,7 +189,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
                                   autofocus: false,
                                   decoration:
                                       InputDecorations.buildInputDecoration_1(
-                                          borderColor: MyTheme.noColor,
+                                          borderColor: MyTheme.black,
                                           hint_text: "A X B 4 J H"),
                                 ),
                               ),
@@ -236,7 +236,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
                                   autocorrect: false,
                                   decoration:
                                       InputDecorations.buildInputDecoration_1(
-                                          borderColor: MyTheme.noColor,
+                                          borderColor: MyTheme.black,
                                           hint_text: "• • • • • • • •"),
                                 ),
                               ),
@@ -246,7 +246,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
                                   AppLocalizations.of(context)!
                                       .password_must_contain_at_least_6_characters,
                                   style: TextStyle(
-                                      color: MyTheme.textfield_grey,
+                                      color: MyTheme.black,
                                       fontStyle: FontStyle.italic),
                                 ),
                               )
@@ -290,7 +290,7 @@ class _PasswordOtpState extends State<PasswordOtp> {
                               autocorrect: false,
                               decoration:
                                   InputDecorations.buildInputDecoration_1(
-                                      borderColor: MyTheme.noColor,
+                                      borderColor: MyTheme.black,
                                       hint_text: "• • • • • • • •"),
                             ),
                           ),

@@ -166,7 +166,7 @@ class _SendAWithdrwRequestState extends State<SendAWithdrwRequest> {
                     width: 120.0,
                     child: Text(
                       LangText(context: context).getLocal()!.submit_ucf,
-                      style: TextStyle(color: MyTheme.white, fontSize: 13),
+                      style: TextStyle(color: MyTheme.black, fontSize: 13),
                     ),
                     backgroundColor: MyTheme.app_accent_color,
                     onTap: () {

@@ -53,6 +53,7 @@ class ProductRepository {
       "App-Language": app_language.$!,
       "Authorization": "Bearer ${access_token.$}",
     });
+    print(response.body);
     return auctionProductListResponseFromJson(response.body);
   }
 
@@ -129,7 +130,7 @@ class ProductRepository {
     return deleteProductFromJson(response.body);
   }
 
-  Future<ProductEditResponse> productEdit({required id, lang = "en"}) async {
+  Future<ProductEditResponse> productEdit({required id, lang = "sa"}) async {
     String url =
         ("${AppConfig.BASE_URL_WITH_PREFIX}/products/edit/$id?lang=$lang");
 

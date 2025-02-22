@@ -67,7 +67,7 @@ class BusinessSettingHelper {
         case 'pos_activation_for_seller':
           {
             if (element.value.toString() == "1") {
-              pos_manager_activation.$ = true;
+              pos_manager_activation.$ = false;
             } else {
               pos_manager_activation.$ = false;
             }

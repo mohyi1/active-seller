@@ -166,7 +166,7 @@ class _PaymentHistoryState extends State<PaymentHistory> {
                   style: TextStyle(
                       fontSize: 13,
                       fontWeight: FontWeight.bold,
-                      color: MyTheme.app_accent_color),
+                      color: MyTheme.black),
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                 ),
@@ -202,7 +202,7 @@ class _PaymentHistoryState extends State<PaymentHistory> {
             Text(amount,
                 style: TextStyle(
                     fontSize: 16,
-                    color: MyTheme.app_accent_color,
+                    color: MyTheme.black,
                     fontWeight: FontWeight.w500)),
           ],
         ));

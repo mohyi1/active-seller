@@ -46,7 +46,7 @@ class UpdateDigitalProduct extends StatefulWidget {
 class _UpdateDigitalProductState extends State<UpdateDigitalProduct> {
   // double variables
 
-  String _statAndEndTime = "Select Date";
+  String _statAndEndTime = "حدد التاريخ";
   double mHeight = 0.0, mWidht = 0.0;
   int _selectedTabIndex = 0;
 
@@ -93,7 +93,7 @@ class _UpdateDigitalProductState extends State<UpdateDigitalProduct> {
       slug,
       metaDescription,
       metaImg;
-  String? lang = "en";
+  String? lang = "sa";
   var tagMap = [];
   List<String?>? tags = [],
       choiceNo,
@@ -194,8 +194,8 @@ class _UpdateDigitalProductState extends State<UpdateDigitalProduct> {
 
       if (tmpTax.isNotEmpty) {
         var taxList = [
-          CommonDropDownItem("amount", "Flat"),
-          CommonDropDownItem("percent", "Percent")
+      CommonDropDownItem("amount", "مبلغ"),
+      CommonDropDownItem("percent", "نسبة مئوية"),
         ];
         CommonDropDownItem selectedTax = taxList
             .where((element) => element.key == tmpTax.first.taxType)
@@ -523,7 +523,7 @@ class _UpdateDigitalProductState extends State<UpdateDigitalProduct> {
           },
           child: Text(
             LangText(context: context).getLocal()!.update_now_ucf,
-            style: TextStyle(color: MyTheme.white),
+            style: TextStyle(color: MyTheme.black),
           ),
         ),
       ),
@@ -1834,7 +1834,7 @@ class _UpdateDigitalProductState extends State<UpdateDigitalProduct> {
         child: Text(
           text,
           style: TextStyle(
-              fontSize: 12, fontWeight: FontWeight.bold, color: MyTheme.white),
+              fontSize: 12, fontWeight: FontWeight.bold, color: MyTheme.black),
         ),
       ),
     );
@@ -1845,6 +1845,7 @@ class _UpdateDigitalProductState extends State<UpdateDigitalProduct> {
       leadingWidth: 0.0,
       centerTitle: false,
       elevation: 0.0,
+      leading: Container(),
       title: Row(
         children: [
           SizedBox(
@@ -1879,7 +1880,7 @@ class _UpdateDigitalProductState extends State<UpdateDigitalProduct> {
               selectedLanguage = onchange;
               setChange();
               getProductCurrentValues();
-            }, selectedLanguage, languages,
+            }, selectedLanguage, languages.reversed.toList(),
                 width: DeviceInfo(context).getWidth() / 2.5),
           )
         ],

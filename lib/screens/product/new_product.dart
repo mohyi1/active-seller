@@ -281,7 +281,7 @@ class _NewProductState extends State<NewProduct> {
       CommonDropDownItem("key3", "value3"),
     ]);
     discountTypeList.addAll([
-      CommonDropDownItem("flat", "مبلغ"),
+      CommonDropDownItem("amount", "مبلغ"),
       CommonDropDownItem("percent", "نسبة مئوية"),
     ]);
     selectedProductDiscountType = discountTypeList.first;
@@ -718,7 +718,7 @@ class _NewProductState extends State<NewProduct> {
                     },
                     child: Text(
                       LangText(context: context).getLocal()!.save_n_unpublish_ucf,
-                      style: TextStyle(color: MyTheme.white),
+                      style: TextStyle(color: MyTheme.black),
                     ))),
           ),
           Expanded(
@@ -731,7 +731,7 @@ class _NewProductState extends State<NewProduct> {
                     },
                     child: Text(
                         LangText(context: context).getLocal()!.save_n_publish_ucf,
-                        style: TextStyle(color: MyTheme.white)))),
+                        style: TextStyle(color: MyTheme.black)))),
           )
         ],
       ),
@@ -2731,7 +2731,7 @@ class _NewProductState extends State<NewProduct> {
               style: TextStyle(
                   fontSize: 12,
                   fontWeight: FontWeight.bold,
-                  color: MyTheme.white),
+                  color: MyTheme.black),
             )));
   }
 

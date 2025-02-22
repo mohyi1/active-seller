@@ -439,7 +439,7 @@ class _OrdersState extends State<Orders> {
             Text(
               _orderList[index].total,
               style: TextStyle(
-                  color: MyTheme.app_accent_color,
+                  color: Colors.black,
                   fontSize: 16,
                   fontWeight: FontWeight.w500),
             )

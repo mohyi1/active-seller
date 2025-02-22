@@ -44,7 +44,7 @@ class NewAuctionProduct extends StatefulWidget {
 class _NewAuctionProductState extends State<NewAuctionProduct> {
   // double variables
 
-  String _statAndEndTime = "Select Date";
+  String _statAndEndTime = "حدد التاريخ";
 
   double mHeight = 0.0, mWidht = 0.0;
   int _selectedTabIndex = 0;
@@ -553,8 +553,8 @@ class _NewAuctionProductState extends State<NewAuctionProduct> {
   @override
   void dispose() {
     // TODO: implement dispose
-    productDescriptionKey.currentState!.deactivate();
-    productDescriptionKey.currentState!.dispose();
+    // productDescriptionKey.currentState!.deactivate();
+    // productDescriptionKey.currentState!.dispose();
 
     super.dispose();
   }
@@ -591,7 +591,7 @@ class _NewAuctionProductState extends State<NewAuctionProduct> {
                 },
                 child: Text(
                   LangText(context: context).getLocal().save_ucf,
-                  style: TextStyle(color: MyTheme.white),
+                  style: TextStyle(color: MyTheme.black),
                 ),
               ),
             ),
@@ -2638,7 +2638,7 @@ class _NewAuctionProductState extends State<NewAuctionProduct> {
         child: Text(
           text,
           style: TextStyle(
-              fontSize: 12, fontWeight: FontWeight.bold, color: MyTheme.white),
+              fontSize: 12, fontWeight: FontWeight.bold, color: MyTheme.black),
         ),
       ),
     );
